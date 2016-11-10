@@ -10,10 +10,16 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        datePicker.onChange(handler: {_ in
+            print("Changed");
+        })
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,12 +8,46 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BarButtonItemViewController: UIViewController {
 
+    @IBOutlet weak var barButton: UIBarButtonItem!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var segControll: UISegmentedControl!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var swt: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        barButton.onClick {_ in
+            print("Clicked");
+        };
+        
+        button.onClick { (btn) in
+            print("Button clicked");
+        }
+        
+        swt.onChange(handler: { ctrl in
+            print("swt changed");
+
+        })
+        
+        slider.onChange { (sld) in
+            print("slider change to \(sld.value)");
+        }
+        
+        stepper.onChange { (obj) in
+            print("stepper change to \(obj.value)");
+        }
+
+        segControll.onChange { (obj) in
+            print("seg change to \(obj.selectedSegmentIndex)");
+        }
+
+        
     }
 
     override func didReceiveMemoryWarning() {

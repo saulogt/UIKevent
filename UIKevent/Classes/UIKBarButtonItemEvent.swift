@@ -14,7 +14,7 @@ var BarItemClickClosureKey : Int16 = 0;
 
 extension UIBarButtonItem {
     
-    typealias ClickClosure =  ((_ sender: UIBarButtonItem)->Void);
+    public typealias ClickClosure =  ((_ sender: UIBarButtonItem)->Void);
 
     
     class ClickEventWrapper {
@@ -24,7 +24,7 @@ extension UIBarButtonItem {
         }
     }
     
-    func onClick( handler: @escaping ClickClosure){
+    public func onClick( handler: @escaping ClickClosure){
         
         
         objc_setAssociatedObject(self, &BarItemClickClosureKey, ClickEventWrapper(closure: handler) , .OBJC_ASSOCIATION_RETAIN_NONATOMIC);
