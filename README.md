@@ -20,9 +20,55 @@ it, simply add the following line to your Podfile:
 pod "UIKevent"
 ```
 
+## Usage
+
+The controls supported are 
+* UIBarButtonItem
+* UIButton
+* UISegmentedControl
+* UIStepper
+* UISlider
+* UISwitch
+* UIDatePicker
+
+It is still required to import UIKevent. I recomend doing thins only in the AppDelegate.swift 
+```swift 
+import UIKevent
+```
+
+
+```swift
+barButton.onClick {_ in
+    print("BarButtonItem Clicked");
+};
+
+button.onClick { (btn) in
+    print("Button clicked");
+}
+
+switchControl.onChange(handler: { ctrl in
+    print("UISwitch changed");
+
+})
+
+slider.onChange { (sld) in
+    print("slider change to \(sld.value)");
+}
+
+stepper.onChange { (obj) in
+    print("stepper change to \(obj.value)");
+}
+
+segControll.onChange { (obj) in
+    print("seg change to \(obj.selectedSegmentIndex)");
+}
+```
+
+
+
 ## Author
 
-Saulo Tauil, saulogt@gmail.com
+Saulo Tauil
 
 ## License
 
