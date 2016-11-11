@@ -22,7 +22,7 @@ class BarButtonItemViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        barButton.onClick {_ in
+        barButton.onClick {(barBtn: UIBarButtonItem) in
             print("Clicked");
         };
         
@@ -30,7 +30,7 @@ class BarButtonItemViewController: UIViewController {
             print("Button clicked");
         }
         
-        swt.onChange(handler: { ctrl in
+        swt.onChange(handler: { (ctrl : UISwitch) in
             print("swt changed");
 
         })
