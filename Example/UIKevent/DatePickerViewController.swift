@@ -11,6 +11,7 @@ import UIKit
 class DatePickerViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,10 @@ class DatePickerViewController: UIViewController {
         datePicker.onChange(handler: {_ in
             print("Changed");
         })
+        
+        textField.onChange { txt in
+            print("text changed \(txt.text)");
+        }
         
     }
 

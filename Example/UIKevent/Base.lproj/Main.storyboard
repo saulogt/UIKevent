@@ -96,25 +96,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Hk-kn-D3p">
-                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
+                                <rect key="frame" x="27" y="72" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="500436208.722516">
                                     <!--2016-11-10 02:03:28 +0000-->
                                 </date>
                             </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8JW-99-XU9">
+                                <rect key="frame" x="27" y="296" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7Hk-kn-D3p" firstAttribute="centerX" secondItem="d6P-nc-mgA" secondAttribute="centerX" id="8VA-K3-Eko"/>
-                            <constraint firstItem="7Hk-kn-D3p" firstAttribute="centerY" secondItem="d6P-nc-mgA" secondAttribute="centerY" id="JQB-lW-aP0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8JW-99-XU9" secondAttribute="trailing" constant="12" id="JSu-jw-4XP"/>
+                            <constraint firstItem="7Hk-kn-D3p" firstAttribute="top" secondItem="wlr-5c-dea" secondAttribute="bottom" constant="8" id="TdK-iT-seb"/>
+                            <constraint firstItem="8JW-99-XU9" firstAttribute="leading" secondItem="d6P-nc-mgA" secondAttribute="leadingMargin" constant="11" id="ZPv-xs-7cq"/>
+                            <constraint firstItem="8JW-99-XU9" firstAttribute="centerX" secondItem="7Hk-kn-D3p" secondAttribute="centerX" id="fPQ-Y3-UCw"/>
+                            <constraint firstItem="8JW-99-XU9" firstAttribute="top" secondItem="7Hk-kn-D3p" secondAttribute="bottom" constant="8" id="llt-VQ-ldA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="7Hk-kn-D3p" id="RrF-Qk-cmi"/>
+                        <outlet property="textField" destination="8JW-99-XU9" id="0Cj-nd-j8J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5v-dc-YJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="-551"/>
+            <point key="canvasLocation" x="1151.2" y="-551.87406296851577"/>
         </scene>
         <!--Title-->
         <scene sceneID="stC-nm-VyN">
