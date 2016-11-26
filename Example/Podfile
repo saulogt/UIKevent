@@ -7,9 +7,9 @@ target 'UIKevent_Example' do
   target 'UIKevent_Tests' do
       inherit! :search_paths
 
-pod 'Quick'
-pod 'Nimble'
-pod 'FBSnapshotTestCase'
-pod 'Nimble-Snapshots'
+	pod 'Quick'
+	pod 'Nimble'
+	pod 'FBSnapshotTestCase'
+	pod 'Nimble-Snapshots'
   end
 end
