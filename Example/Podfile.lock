@@ -12,7 +12,7 @@ PODS:
     - Nimble
     - Quick
   - Quick (0.10.0)
-  - UIKevent (0.1.0)
+  - UIKevent (0.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -30,8 +30,8 @@ SPEC CHECKSUMS:
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Nimble-Snapshots: 4ba722c35b73a680cbd856e4bc22076dfb8085d4
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
-  UIKevent: 1ee13ca8ad0f444c2999f3ff2f2ff571dbd98f65
+  UIKevent: 5ccb2ecdb13c3bdc8bc94915cadf56064ad7739a
 
-PODFILE CHECKSUM: 195ea29b9b2cc51c228de24f1b81a433a7002c86
+PODFILE CHECKSUM: 2c90fc6ce485d7ee8118856d9336cbeb7c4723e6
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

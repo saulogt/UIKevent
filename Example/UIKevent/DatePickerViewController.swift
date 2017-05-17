@@ -22,7 +22,7 @@ class DatePickerViewController: UIViewController {
         })
         
         textField.onChange { txt in
-            print("text changed \(txt.text)");
+            print("text changed \(txt.text ?? "<null>" )");
         }
         
     }
